@@ -1,0 +1,6 @@
+train: c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project\train\images
+val: c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project\val\images
+test: c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project\test\images
+
+nc: 10
+names: ['plastic', 'metal', 'wood', 'glass', 'rubber', 'cloth', 'paper', 'fishing', 'bio', 'unknown']
