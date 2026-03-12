@@ -30,10 +30,13 @@ eda_outputs/
 comparison/
 yolo_predictions/
 detr_predictions/
-runs/
-*.pt
-*.onnx
-*.engine
+
+# Only exclude generic pre-trained weights, but keep our fine-tuned ones
+yolov8n.pt
+yolov8m.pt
+yolov8s.pt
+yolov8l.pt
+yolov8x.pt
 
 # IDEs
 .spyproject/
