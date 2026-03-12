@@ -10,4 +10,5 @@ pandas
 tqdm
 albumentations
 seaborn
+timm
 matplotlib
