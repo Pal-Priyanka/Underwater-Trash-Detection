@@ -3,14 +3,27 @@
 This guide is for the professor (or any user) to run this project step-by-step within the **Spyder IDE**.
 
 ## 1. Environment Setup
-Before running files in Spyder, ensure all dependencies are installed in your Python environment:
+The project was built using **Python 3.10+** (specifically 3.14.2). To run it seamlessly, follow these setup steps:
 
 1. Open your terminal or Anaconda Prompt.
 2. Navigate to the project folder.
 3. Run: `pip install -r requirements.txt`
 
-> [!IMPORTANT]
-> Make sure Spyder is using the same Python interpreter where you installed these requirements. You can check this in Spyder under **Tools → Preferences → Python interpreter**.
+### 💡 If the Environment is Missing or Incompatible:
+If you don't have a Python 3.10+ environment, we recommend creating a new one using Conda:
+```bash
+conda create -n trash_detection python=3.10
+conda activate trash_detection
+pip install -r requirements.txt
+```
+
+### 🔗 Linking the Environment to Spyder:
+To make Spyder use this specific environment:
+1. Go to **Tools → Preferences**.
+2. Select **Python interpreter** on the left.
+3. Select **Use the following Python interpreter**.
+4. Browse to the path of your Python executable (e.g., `C:\Anaconda\envs\trash_detection\python.exe`).
+5. Click **Apply** and **Restart the console** (bottom right of Spyder).
 
 ## 2. Set the Working Directory ⬅️ CRITICAL
 This project uses relative paths. For the scripts to find the data, Spyder's "Working Directory" **must** be set to the project root folder.
