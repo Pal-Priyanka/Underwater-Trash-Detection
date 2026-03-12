@@ -60,4 +60,6 @@ DETR shows promise in complex backgrounds but struggles with small object detect
     print("\n✅ PHASE 5 COMPLETE. Outputs saved to /comparison/")
 
 if __name__ == "__main__":
-    run_phase5(r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project")
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    run_phase5(root_dir)

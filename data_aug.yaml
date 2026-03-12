@@ -1,5 +1,4 @@
 
-path: c:/Users/palan/OneDrive/Desktop/Projects/Underwater Trash Detection Project
 train: augmented_data/train/images
 val: val/images
 test: test/images

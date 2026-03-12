@@ -5,7 +5,8 @@ import random
 
 def visualize():
     # Paths
-    root_dir = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
     split = 'train'
     img_dir = os.path.join(root_dir, split, 'images')
     lbl_dir = os.path.join(root_dir, split, 'labels')

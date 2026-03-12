@@ -97,4 +97,6 @@ def clean_dataset(root_dir):
     print(f"Label files with clamped coordinates: {total_fixed_boxes}")
 
 if __name__ == "__main__":
-    clean_dataset(r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project")
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    clean_dataset(root_dir)

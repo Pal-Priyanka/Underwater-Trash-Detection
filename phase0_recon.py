@@ -122,4 +122,6 @@ def analyze_dataset(root_dir):
         print(f"{name}: {count}")
 
 if __name__ == "__main__":
-    analyze_dataset(r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project")
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    analyze_dataset(root_dir)

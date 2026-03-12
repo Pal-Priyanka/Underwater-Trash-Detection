@@ -3,6 +3,8 @@ import cv2
 import glob
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from tqdm import tqdm
@@ -169,4 +171,6 @@ def run_eda(root_dir):
     print("\n✅ PHASE 2 COMPLETE. Plots and Insight Summary saved.")
 
 if __name__ == "__main__":
-    run_eda(r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project")
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    run_eda(root_dir)

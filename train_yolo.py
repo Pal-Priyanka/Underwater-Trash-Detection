@@ -1,3 +1,4 @@
+import torch
 from ultralytics import YOLO
 import os
 
@@ -7,7 +8,8 @@ def train_yolo():
     # Load pretrained YOLOv8m (medium)
     model = YOLO('yolov8m.pt')
     
-    root_dir = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
     data_yaml = os.path.join(root_dir, 'data_aug.yaml')
     
     # Train with requested hyperparameters
@@ -26,7 +28,6 @@ def train_yolo():
         plots=True,
         name='yolov8_underwater_final',
         project='runs/train',
-        device='0' if torch.cuda.is_available() else 'cpu' 
     )
     
     print(f"YOLOv8 Training Complete. Best model saved at {results.save_dir}")

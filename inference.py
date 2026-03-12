@@ -4,13 +4,13 @@ import glob
 
 def run_inference():
     # Path to the best model weight
-    root_dir = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
-    model_path = os.path.join(root_dir, 'runs', 'train', 'underwater_trash_yolov8n', 'weights', 'best.pt')
-    
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    # Use the provided weight in the root or a default
+    model_path = os.path.join(root_dir, 'yolov8m.pt')
     if not os.path.exists(model_path):
-        print(f"Model not found at: {model_path}")
-        return
-
+        model_path = 'yolov8n.pt'
+        
     model = YOLO(model_path)
     
     # Get 5 sample images from the test set

@@ -107,4 +107,6 @@ def run_augmentation(root_dir):
 
 import shutil
 if __name__ == "__main__":
-    run_augmentation(r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project")
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    run_augmentation(root_dir)

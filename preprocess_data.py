@@ -86,6 +86,7 @@ def preprocess_split(split_path):
     print(f"Processed {count} files in {split_path}")
 
 if __name__ == "__main__":
-    root_dir = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
     for split in ['train', 'val', 'test']:
         preprocess_split(os.path.join(root_dir, split))
