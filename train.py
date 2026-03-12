@@ -6,7 +6,8 @@ def train_model():
     model = YOLO('yolov8n.pt')
 
     # Project path
-    root_dir = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
     data_yaml = os.path.join(root_dir, 'data.yaml')
 
     # Training parameters

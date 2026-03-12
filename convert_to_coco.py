@@ -67,6 +67,7 @@ def yolo_to_coco(root_dir, split):
         json.dump(coco, f)
 
 if __name__ == "__main__":
-    rd = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
+    # Dynamically detect the project root
+    rd = os.path.dirname(os.path.abspath(__file__))
     for s in ['train', 'val', 'test']:
         yolo_to_coco(rd, s)

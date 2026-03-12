@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data & Models
+augmented_data/
+coco_annotations/
+eda_outputs/
+comparison/
+yolo_predictions/
+detr_predictions/
+runs/
+*.pt
+*.onnx
+*.engine
+
+# IDEs
+.spyproject/
+.idea/
+.vscode/
+
+# Logs
+*.log
+pip_error.log
+
+# System
+.DS_Store
+Thumbs.db

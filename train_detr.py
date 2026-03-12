@@ -12,7 +12,8 @@ import numpy as np
 
 def train_detr():
     print("--- PHASE 4B: DETR TRAINING ---")
-    root_dir = r"c:\Users\palan\OneDrive\Desktop\Projects\Underwater Trash Detection Project"
+    # Dynamically detect the project root
+    root_dir = os.path.dirname(os.path.abspath(__file__))
     coco_dir = os.path.join(root_dir, 'coco_annotations')
     
     # Load processor and model
