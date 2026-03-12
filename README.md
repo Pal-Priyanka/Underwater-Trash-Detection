@@ -22,11 +22,15 @@ An end-to-end deep learning pipeline for detecting and localizing underwater tra
 ## Model Architecture & System Design
 ![System Architecture](screenshots/architecture_diagram.png)
 
-## How to Run
+### Standard Run
 1. Clone the repo: `git clone https://github.com/Pal-Priyanka/Underwater-Trash-Detection`
 2. Install requirements: `pip install -r requirements.txt`
 3. Run the app: `streamlit run app.py`
 4. Open browser: `http://localhost:8501`
+
+### Running in Spyder IDE (File-by-File)
+If you prefer to run the project scripts individually within an IDE like **Spyder**, please refer to the detailed guide:
+- **[Spyder IDE: File-by-File Execution Guide](Spyder_Instructions.md)**
 
 ## Results
 | Metric | YOLOv8m | DETR |
